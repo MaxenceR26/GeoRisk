@@ -1,0 +1,39 @@
+Ne pas oublier :
+
+Mentionner ou on a récupérer chaque info / chaque document
+Licence etalable donc aucun risque mais je doit mentionner.
+
+Séparateur :
+
+<hr class="sidebar-divider d-none d-md-block">
+
+Badge :
+
+<span class="badge badge-danger badge-counter">3+</span>
+
+Exemple badge en entier :
+
+<a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <i class="fas fa-bell fa-fw"></i>
+    <!-- Counter - Alerts -->
+    <span class="badge badge-danger badge-counter">3+</span>
+</a>
+
+Trait vertical :
+
+<div class="topbar-divider d-none d-sm-block"></div>
+
+
+Bordel ->
+
+// button.style.fontWeight = 'bold'
+// button.href = 'google.com' // A faire en dernier 
+// button.style.color = '#4e73df'
+
+// var button = document.createElement('a')
+// button.innerHTML = `Voir la liste des arrêtés de catastrophe naturelle`
+// button.className = 'btn btn-primary mt-2 mb-3'
+// button.onclick = listingElement // A faire en dernier 
+// button.style.fontWeight = 'bold'
+// div_element.appendChild(button)

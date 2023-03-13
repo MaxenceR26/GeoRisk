@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>GeoRisk - Dashboard</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="../css/sb-admin-2.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <script src="https://kit.fontawesome.com/55024bf74a.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<style>
+    *::-webkit-scrollbar {
+        width: 14px;               /* width of the entire scrollbar */
+    }
+
+    *::-webkit-scrollbar-track {
+        background: #4e73df;        /* color of the tracking area */
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background-color: white;    /* color of the scroll thumb */
+        border-radius: 20px;       /* roundness of the scroll thumb */
+        border: 3px solid #4e73df;  /* creates padding around scroll thumb */
+    }
+</style>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fab fa-cloudversify"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">GeoRisk</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Les risques naturels
+            </div>
+
+            <!-- Nav Item - Page nucléaire
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-radiation-alt"></i>
+                    <span>Risque nucléaire</span>
+                </a>
+            </li> -->
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Cliquez-ici</span>
+                </a>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Risques naturels</h6>
+                        <a class="collapse-item active" href="risque_inondation.html"><i class="fas fa-tint">&nbsp;&nbsp;</i><span class="text-uppercase">i</span><span class="text-lowercase">nondation</span></a>
+                        <a class="collapse-item" href="risque_sis.html"><i class="fas fa-globe-europe">&nbsp;&nbsp;</i><span class="text-uppercase">s</span><span class="text-lowercase">ismique</span></a>
+                        <a class="collapse-item" href="risque_incendie.html"><i class="fab fa-gripfire">&nbsp;&nbsp;</i><span class="text-uppercase">f</span><span class="text-lowercase">eu de forêt</span></a>
+                        <a class="collapse-item" href="risque_litoraux.html"><i class="fas fa-swimmer">&nbsp;&nbsp;</i><span class="text-uppercase">l</span><span class="text-lowercase">itoraux</span></a>
+                        <a class="collapse-item" href="risque_mouvement_terrain.html"><i class="fas fa-house-damage">&nbsp;&nbsp;</i><span class="text-uppercase">m</span><span class="text-lowercase">ouvement de terrain</span></a>
+                        <a class="collapse-item" href="risque_cyclone.html"><i class="fa-solid fa-tornado">&nbsp;&nbsp;</i><span class="text-uppercase">c</span><span class="text-lowercase">yclone</span></a>
+                        <a class="collapse-item" href="risque_tempete.html"><i class="fas fa-poo-storm">&nbsp;&nbsp;</i><span class="text-uppercase">t</span><span class="text-lowercase">empête</span></a>
+                        <a class="collapse-item" href="#"><i class="fa-solid fa-hill-avalanche">&nbsp;&nbsp;</i><span class="text-uppercase">a</span><span class="text-lowercase">valanche</span></a>
+                        <a class="collapse-item" href="#"><i class="fa-solid fa-volcano">&nbsp;&nbsp;</i><span class="text-uppercase">e</span><span class="text-lowercase">ruption volcanique</span></a>
+                        <a class="collapse-item" href="risque_radon.html"><i class="fas fa-radiation-alt">&nbsp;&nbsp;</i><span class="text-uppercase">r</span><span class="text-lowercase">adon</span></a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <div class="sidebar-heading">
+                Les risques technologiques
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Cliquez-ici</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Risques technologiques</h6>
+                        <a class="collapse-item" href="#"><i class="fas fa-tint">&nbsp;</i><span class="text-uppercase">a</span><span class="text-lowercase">ccident industriel</span></a>
+                        <a class="collapse-item" href="#"><i class="fas fa-globe-europe">&nbsp;</i><span class="text-uppercase">a</span><span class="text-lowercase">ccident nucléaire</span></a>
+                        <a class="collapse-item" href="#"><i class="fab fa-gripfire">&nbsp;</i><span class="text-uppercase">r</span><span class="text-lowercase">upture de barrage</span></a>
+                        <a class="collapse-item" href="#"><i class="fas fa-swimmer">&nbsp;</i><span class="text-uppercase">t</span><span class="text-lowercase">ransport de <br>marchandises<br> dangereuses</span></a>
+                        <a class="collapse-item" href="#"><i class="fas fa-house-damage">&nbsp;</i><span class="text-uppercase">c</span><span class="text-lowercase">analisations de <br>transport de matières<br> dangereuses</span></a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Informations supplémentaires
+            </div>
+
+            <!-- Nav Item - Stats -->
+            <li class="nav-item">
+                <a class="nav-link" href="charts.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Statistiques</span></a>
+            </li>
+            <!-- Nav Item - Risk général -->
+            <li class="nav-item">
+                <a class="nav-link" href="tables.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Risque général</span></a>
+            </li>
+            <!-- Nav Item - Maps -->
+            <li class="nav-item">
+                <a class="nav-link" href="mondial_map.html">
+                    <i class="fas fa-map-marked"></i>
+                    <span>Carte mondial</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+             <!-- Heading -->
+             <div class="sidebar-heading">
+                Les kits
+            </div>
+
+            <li class="nav-item">
+                <a class="nav-link" href="kit_urgence.html">
+                    <i class="fa-solid fa-kit-medical text-danger"></i>
+                    <span>Kit d'urgence</span></a>
+            </li>
+
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-primary topbar mb-4 static-top shadow" id="navbar-active-drag">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- bouton pour réduire la page -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link" href="#" id="reductButton" role="button">
+                                <i class="fas fa-minus fa-1x"></i>
+                            </a>
+                        </li>
+
+                        <!-- bouton pour agrandir la page -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="maximizeButton" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="far fa-square fa-1x"></i>
+                            </a>
+                        </li>
+
+                        <!-- bouton pour quitter la page -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="closeButton" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-times fa-1x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav><!-- End of Topbar -->
+                <div class="container-fluid">
+                    <div class="title">
+                        <p class="h1 text-dark text-uppercase font-weight-bold">Risque d'inondation</p>
+                        <div class="sous-title d-flex">
+                            <p style="margin-top: -10px;" class="font-weight-bold">><p style="margin-top: -10px; margin-left: 5px;">Inondation</p>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img id="mapInondation" src="../image/carte_inondation.png" width="798" height="776" style="-webkit-user-drag: none; user-select: none;">      
+                    </div>
+                    <div class="container mt-4">
+                        <p class="h3 text-dark font-weight-bold">Qu’est-ce qu’une inondation ?</p>
+                        <span class="h6">> Une inondation correspond à la submersion temporaire de zones habituellement hors d’eau.</span><br><br>
+                        <span class="h4 mt-2 badge badge-dark" style="font-size: 15px;">Comment se produit une inondation ?</span><br><br>
+                        <p class="">La plupart des inondations se produisent lorsque le volume d'eau d'une rivière ou d'un cours d'eau dépasse la capacité du lit. Il y a également des inondations le long des lacs et des littoraux maritimes lorsque le niveau normal de l'eau augmente au-delà du niveau des terres riveraines.</p>
+                        <span class="h4 mt-2 badge badge-dark" style="font-size: 15px;">Un peu de chiffre...</span> <!-- AJOUTER SYSTEM RESPONSIVE DE LA CARTE ET DES TITRE DANS LE GRID-->
+                        <div class="row mt-2">
+                            
+                            <div class="col-4 d-flex justify-content-center">
+                                <div class="container-fluid text-center ">
+                                    <br>
+                                    <p class="font-weight-bold text-uppercase text-dark" style="line-height: 15px;" id="text-chiffre">17 millions<br><br>
+                                        <span class="font-weight-light text-lowercase" style="font-size: 15px;">de personnes en France</span></p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-4 d-flex justify-content-center">
+                                <div class="container-fluid text-center">
+                                    <br>
+                                    <p class="font-weight-bold text-uppercase text-dark" style="line-height: 15px;" id="text-chiffre">9,8 millions<br><br>
+                                        <span class="font-weight-light text-lowercase" style="font-size: 15px;">d’emplois sont exposés à un risque de crue</span></p>
+                                </div>
+                            </div>
+                            <div class="col-4 d-flex justify-content-center">
+                                <div class="container-fluid text-center">
+                                    <br>
+                                    <p class="font-weight-bold text-uppercase text-dark" style="line-height: 15px;" id="text-chiffre">53 %<br><br>
+                                        <span class="font-weight-light text-lowercase" style="font-size: 15px;">des indemnisations accordées depuis 1982 par le régime des catastrophes naturelles, soit 7,3 Mds €, font suite à des inondations</span></p>
+                                </div>
+                            </div>
+                        </div>               
+                    </div>
+
+                    <div class="container mt-3">
+                        <p class="h3 text-dark font-weight-bold">Qu’elles sont les causes d'une inondation</p>
+                        <div class="sous-title">
+                            <p class="text-dark h5 mt-1">Ce qu'il faut savoir en premier lieu :</p>
+                            <p class="h6 mt-3">Il existe deux types d'inondations, selon les qu'elles impliquent des eaux douces ou des eaux marines. Les premières, que l'on pourrait qualifier de « terrestres », peuvent se produire dans l'intérieur des terres, tandis que les inondations marines concernent le littoral</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <button type="button" class="btn bg-primary text-white w-100 mt-3" data-toggle="modal" data-target="#popup">Causes terrestres&nbsp;<span style="font-weight: bold; color: rgb(61, 61, 61);;">></span></button>
+                                <div class="modal fade" id="popup" tabindex="-1" aria-labelledby="popupLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="popupLabel">Causes des inondations terrestres</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="terrestres">
+                                                    <p class="text-dark h5 font-weight-bold">Inondations terrestres</p>
+                                                    <p>
+                                                        - Le débordement direct d'un cours d'eau dans son lit majeur, suite à des épisodes de fortes précipitations ou à la fonte des neiges hivernales (ce sont les crues).<br><br>
+                                                        - Le débordement indirect d'une réserve d'eau (de surface ou souterraine) suite à la remontée des nappes phréatiques ou bien d'eaux à travers les canalisations.<br><br>
+                                                        - L'accumulation des eaux de ruissellement suite à des précipitations abondantes. Il se peut en effet que les capacités de drainage et d'infiltration d'une zone soient insuffisantes pour évacuer les eaux reçues, qui s'accumulent alors. Ce phénomène est accru lorsqu'il y a eu une imperméabilisation des sols (urbanisation) sans création d'un réseau d'évacuation suffisant.<br><br>
+                                                        - La rupture d’un ouvrage de génie civil, comme un barrage ou une digue. Un défaut de conception, un manque d'entretien ou tout simplement un volume d'eau trop important peuvent créer une brèche puis une rupture d'un ouvrage de protection. Les conséquences sont en général catastrophiques car le flux d'eau est soudain et très puissant.<br><br>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <button type="button" class="btn bg-primary text-white w-100 mt-3" data-toggle="modal" data-target="#popupSecond">Causes marines&nbsp;<span style="font-weight: bold; color: rgb(61, 61, 61);;">></span></button>
+                                <div class="modal fade" id="popupSecond" tabindex="-1" aria-labelledby="popupSecondLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="popupSecondLabel">Causes des inondations marines</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="marines">
+                                                    <p class="text-dark h5 font-weight-bold">Inondations marines</p>
+                                                    <p>
+                                                        La marée haute de vives-eaux exceptionnelle : à l'équinoxe, lorsque les conditions astronomiques sont favorables, le coefficient de marée peut frôler la valeur maximale de 120. C'est alors que se produisent les marées les plus importantes qui, parfois, inondent les terres du littoral.<br><br>
+                                                        Les phénomènes de surcote, qui provoquent une élévation supplémentaire du niveau de la marée haute. Ondes de houle, vagues, dépressions atmosphériques et plus rarement tempêtes et tsunamis créent une élévation locale du niveau des eaux sur le littoral. Ces phénomènes rendent alors possible une pénétration des eaux marines à l'intérieur des terres.<br><br>
+                                                        La rupture d'un ouvrage de génie civil sur le littoral est encore une fois possible.<br><br>
+                                                        L'élévation du niveau de la mer suite au réchauffement climatique. Cette montée des eaux à long terme menace des zones qui ne sont actuellement pas inondables et fragilisent celles qui le sont.<br><br>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+
+                    <div class="container mt-5">
+                        <p class="h3 text-dark font-weight-bold">Que faire en cas d'inondation ?</p>
+                        <span class="h4 mt-2 badge badge-dark" style="font-size: 14px;">Avant une inondation</span>
+                            <div class="row mt-2 ">
+                                
+                                <div class="col-6">
+                                    <br>
+                                    <p class="font-weight-bold text-uppercase text-dark" style="font-size: 15px; line-height: 15px;">Renseignez-vous auprès de la mairie<br>
+                                        <span class="font-weight-dark text-dark text-lowercase" style="font-size: 12px;">sur le type d'inondation qui vous concerne et les mesures de protections (lieu d'hébergement en cas d'évacuation, etc.)</span></p>
+                                    <p class="font-weight-bold text-uppercase text-dark" style="font-size: 15px; line-height: 15px;">Faites réaliser un diagnostic<br>
+                                        <span class="font-weight-dark text-dark text-lowercase" style="font-size: 12px;">de vulnérabilité de votre maison</span></p>
+                                        <p class="font-weight-bold text-uppercase text-dark" style="font-size: 15px; line-height: 15px;">Préparez votre kit d'urgence 72 heures</span><br>
+                                            <span class="font-weight-dark text-dark text-lowercase" style="font-size: 12px;">avec les objets et articles essentiels</span></p>
+                                </div>
+                                <div class="col-6">
+                                    <br>
+                                    <p class="font-weight-bold text-uppercase text-dark" style="font-size: 15px; line-height: 15px;">Prévoyez les dispositifs de protection à installer :</span><br>
+                                        <span class="font-weight-dark text-dark text-lowercase" style="font-size: 12px;">sacs de sable, barrières amovibles (batardeaux) et le matériel pour surélever les meubles</span></p>
+                                    <p class="font-weight-bold text-uppercase text-dark" style="font-size: 15px; line-height: 15px;">Aménagez une zone refuge</span><br>
+                                        <span class="font-weight-dark text-dark text-lowercase" style="font-size: 12px;">à l'étage, avec une ouverture permettant l'évacuation<span style="font-weight: bold; font-size: 15px;" class="text-uppercase"> ou identifiez</span> un lieu à proximité pour vous réfugier</span></p>
+                                </div>
+                                
+                            </div>        
+                            <span class="h4 badge badge-danger mt-3" style="font-size: 14px;">Quand une inondation est annoncée et que l'eau monte</span>   
+                            <div class="row mt-2">
+                                
+                                <div class="col-6">
+                                    <br>
+                                    <p class="font-weight-bold text-uppercase text-dark" style="font-size: 15px; line-height: 15px;">Eloignez-vous<br>
+                                        <span class="font-weight-dark text-dark text-lowercase" style="font-size: 12px;">des cours d'eau, des berges et des ponts</span></p>
+                                    <p class="font-weight-bold text-uppercase text-dark" style="font-size: 15px; line-height: 15px;">Reportez<br>
+                                        <span class="font-weight-dark text-dark text-lowercase" style="font-size: 12px;">tous vos déplacements, que ce soit à pied ou en voiture</span></p>
+                                    <p class="font-weight-bold text-uppercase text-dark" style="font-size: 15px; line-height: 15px;">N'allez pas chercher<br>
+                                        <span class="font-weight-dark text-dark text-lowercase" style="font-size: 12px;">vos enfants à l'école ou à la crèche : ils y sont en sécurité</span></p>
+                                    <p class="font-weight-bold text-uppercase text-dark" style="font-size: 15px; line-height: 15px;">Informez-vous<br>
+                                        <span class="font-weight-dark text-dark text-lowercase" style="font-size: 12px;">sur les sites Météo-France et VigiCrues</span></p>
+                                </div>
+                                <div class="col-6">
+                                    <br>
+                                    <p class="font-weight-bold text-uppercase text-dark" style="font-size: 15px; line-height: 15px;">Installez<br>
+                                        <span class="font-weight-dark text-dark text-lowercase" style="font-size: 12px;">les dispositifs de protection, sans vous mettre en danger, et placez en hauteur les produits polluants</span></p>
+                                    <p class="font-weight-bold text-uppercase text-dark" style="font-size: 15px; line-height: 15px;">Coupez,<br>
+                                        <span class="font-weight-dark text-dark text-lowercase" style="font-size: 12px;">si possible, les réseaux de gaz, d'électricité et de chauffage</span></p>
+                                    <p class="font-weight-bold text-uppercase text-dark" style="font-size: 15px; line-height: 15px;">Réfugiez-vous<br>
+                                        <span class="font-weight-dark text-dark text-lowercase" style="font-size: 12px;">dans un bâtiment, en hauteur ou à l'étage, avec le kit d'urgence 72 heures</span></p>
+                                    <p class="font-weight-bold text-uppercase text-dark" style="font-size: 15px; line-height: 15px;">Ne descendez pas<br>
+                                        <span class="font-weight-dark text-dark text-lowercase" style="font-size: 12px;">dans les sous-sols ou les parkings souterrains</span></p>
+                                </div>
+                                
+                            </div> 
+                            <span class="h4 badge mt-3 badge-secondary" style="font-size: 14px;">Pendant toute la durée de l'inondation</span>   
+                            <div class="row mt-2 ">
+                                
+                                <div class="col-3 d-flex justify-content-center">
+                                    <div class="container-fluid text-center ">
+                                        <br>
+                                        <p class="font-weight-bold text-uppercase text-dark" style="font-size: 15px; line-height: 15px;">Ne prenez pas votre voiture, <br><br>
+                                            <span class="font-weight-dark text-lowercase" style="font-size: 12px;">30cm d'eau suffisent à emporter une voiture</span></p>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-3 d-flex justify-content-center">
+                                    <div class="container-fluid text-center">
+                                        <br>
+                                        <p class="font-weight-bold text-uppercase text-dark" style="font-size: 15px; line-height: 15px;">Evitez de téléphoner<br><br>
+                                            <span class="font-weight-dark text-lowercase" style="font-size: 12px;">afin de laisser les réseaux disponibles pour les secours</span></p>
+                                    </div>
+                                </div>
+                                <div class="col-3 d-flex justify-content-center">
+                                    <div class="container-fluid text-center">
+                                        <br>
+                                        <p class="font-weight-bold text-uppercase text-dark" style="font-size: 15px; line-height: 15px;">Restez à l'abri,<br><br>
+                                            <span class="font-weight-dark text-lowercase" style="font-size: 12px;">n'évacuez votre domicique que sur ordre des autorités</span></p>
+                                    </div>
+                                </div>
+                                <div class="col-3 d-flex justify-content-center">
+                                    <div class="container-fluid text-center">
+                                        <br>
+                                        <p class="font-weight-bold text-uppercase text-dark" style="font-size: 15px; line-height: 15px;">restez à l'écoute<br><br>
+                                            <span class="font-weight-dark text-lowercase" style="font-size: 12px;">des consignes<br>des autorités</span></p>
+                                    </div>
+                                </div>
+                            </div>      
+                    </div>
+                    
+
+                                      
+                </div>
+                
+            </div>
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; GeoRisk 2023</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a> -->
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Core plugin JavaScript-->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+
+
+    <!-- Page level plugins -->
+    <script src="../vendor/chart.js/Chart.min.js"></script>
+
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

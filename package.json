@@ -1,0 +1,21 @@
+{
+  "name": "georisk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Maxence Remy",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^22.0.0"
+  },
+  "dependencies": {
+    "auto": "^10.37.6",
+    "awesomplete": "^1.1.5",
+    "bootstrap-autocomplete": "^2.3.7",
+    "node-fetch": "^2.6.1",
+    "shell": "^0.5.1"
+  }
+}

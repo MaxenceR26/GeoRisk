@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>GeoRisk - Dashboard</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="../css/sb-admin-2.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <script src="https://kit.fontawesome.com/55024bf74a.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<style>
+    *::-webkit-scrollbar {
+        width: 14px;               /* width of the entire scrollbar */
+    }
+
+    *::-webkit-scrollbar-track {
+        background: #4e73df;        /* color of the tracking area */
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background-color: white;    /* color of the scroll thumb */
+        border-radius: 20px;       /* roundness of the scroll thumb */
+        border: 3px solid #4e73df;  /* creates padding around scroll thumb */
+    }
+</style>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fab fa-cloudversify"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">GeoRisk</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Les risques naturels
+            </div>
+
+            <!-- Nav Item - Page nucléaire
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-radiation-alt"></i>
+                    <span>Risque nucléaire</span>
+                </a>
+            </li> -->
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Cliquez-ici</span>
+                </a>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Risques naturels</h6>
+                        <a class="collapse-item" href="risque_inondation.html"><i class="fas fa-tint">&nbsp;&nbsp;</i><span class="text-uppercase">i</span><span class="text-lowercase">nondation</span></a>
+                        <a class="collapse-item" href="risque_sis.html"><i class="fas fa-globe-europe">&nbsp;&nbsp;</i><span class="text-uppercase">s</span><span class="text-lowercase">ismique</span></a>
+                        <a class="collapse-item" href="risque_incendie.html"><i class="fab fa-gripfire">&nbsp;&nbsp;</i><span class="text-uppercase">f</span><span class="text-lowercase">eu de forêt</span></a>
+                        <a class="collapse-item" href="risque_litoraux.html"><i class="fas fa-swimmer">&nbsp;&nbsp;</i><span class="text-uppercase">l</span><span class="text-lowercase">itoraux</span></a>
+                        <a class="collapse-item active" href="risque_mouvement_terrain.html"><i class="fas fa-house-damage">&nbsp;&nbsp;</i><span class="text-uppercase">m</span><span class="text-lowercase">ouvement de terrain</span></a>
+                        <a class="collapse-item" href="risque_cyclone.html"><i class="fa-solid fa-tornado">&nbsp;&nbsp;</i><span class="text-uppercase">c</span><span class="text-lowercase">yclone</span></a>
+                        <a class="collapse-item" href="risque_tempete.html"><i class="fas fa-poo-storm">&nbsp;&nbsp;</i><span class="text-uppercase">t</span><span class="text-lowercase">empête</span></a>
+                        <a class="collapse-item" href="#"><i class="fa-solid fa-hill-avalanche">&nbsp;&nbsp;</i><span class="text-uppercase">a</span><span class="text-lowercase">valanche</span></a>
+                        <a class="collapse-item" href="#"><i class="fa-solid fa-volcano">&nbsp;&nbsp;</i><span class="text-uppercase">e</span><span class="text-lowercase">ruption volcanique</span></a>
+                        <a class="collapse-item" href="risque_radon.html"><i class="fas fa-radiation-alt">&nbsp;&nbsp;</i><span class="text-uppercase">r</span><span class="text-lowercase">adon</span></a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <div class="sidebar-heading">
+                Les risques technologiques
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Cliquez-ici</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Risques technologiques</h6>
+                        <a class="collapse-item" href="#"><i class="fas fa-tint">&nbsp;</i><span class="text-uppercase">a</span><span class="text-lowercase">ccident industriel</span></a>
+                        <a class="collapse-item" href="#"><i class="fas fa-globe-europe">&nbsp;</i><span class="text-uppercase">a</span><span class="text-lowercase">ccident nucléaire</span></a>
+                        <a class="collapse-item" href="#"><i class="fab fa-gripfire">&nbsp;</i><span class="text-uppercase">r</span><span class="text-lowercase">upture de barrage</span></a>
+                        <a class="collapse-item" href="#"><i class="fas fa-swimmer">&nbsp;</i><span class="text-uppercase">t</span><span class="text-lowercase">ransport de <br>marchandises<br> dangereuses</span></a>
+                        <a class="collapse-item" href="#"><i class="fas fa-house-damage">&nbsp;</i><span class="text-uppercase">c</span><span class="text-lowercase">analisations de <br>transport de matières<br> dangereuses</span></a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Informations supplémentaires
+            </div>
+
+            <!-- Nav Item - Stats -->
+            <li class="nav-item">
+                <a class="nav-link" href="charts.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Statistiques</span></a>
+            </li>
+            <!-- Nav Item - Risk général -->
+            <li class="nav-item">
+                <a class="nav-link" href="tables.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Risque général</span></a>
+            </li>
+            <!-- Nav Item - Maps -->
+            <li class="nav-item">
+                <a class="nav-link" href="mondial_map.html">
+                    <i class="fas fa-map-marked"></i>
+                    <span>Carte mondial</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+             <!-- Heading -->
+             <div class="sidebar-heading">
+                Les kits
+            </div>
+
+            <li class="nav-item">
+                <a class="nav-link" href="kit_urgence.html">
+                    <i class="fa-solid fa-kit-medical text-danger"></i>
+                    <span>Kit d'urgence</span></a>
+            </li>
+
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-primary topbar mb-4 static-top shadow" id="navbar-active-drag">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- bouton pour réduire la page -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link" href="#" id="reductButton" role="button">
+                                <i class="fas fa-minus fa-1x"></i>
+                            </a>
+                        </li>
+
+                        <!-- bouton pour agrandir la page -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="maximizeButton" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="far fa-square fa-1x"></i>
+                            </a>
+                        </li>
+
+                        <!-- bouton pour quitter la page -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="closeButton" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-times fa-1x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav><!-- End of Topbar -->
+                <div class="container-fluid">
+                    <div class="title">
+                        <p class="h1 text-dark text-uppercase font-weight-bold">Risque de mouvement de terrain</p>
+                        <div class="sous-title d-flex">
+                            <p style="margin-top: -10px;" class="font-weight-bold">><p style="margin-top: -10px; margin-left: 5px;">Mouvement de terrain</p>
+                        </div>
+                        <div class="container">
+                            <img src="../image/mouvement_de_terrain.png" style="-webkit-user-drag: none; user-select: none;">
+                        </div>
+                    </div> 
+                    
+                    <div class="container mt-3">
+                        <p class="h3 text-dark">Un risque à multiples facettes</p>
+                        <p>Les mouvements de terrain sont des phénomènes naturels d’origines et de formes très<br>diverses : glissements de terrain, effondrements de cavités souterraines, éboulements, chutes<br>de blocs rocheux, coulées de boue...</p>
+                        <p class="h3 text-dark mt-5">Qu’appelle-t-on mouvements de terrain ?</p>
+                        <p>
+                            Les mouvements de terrain sont des déplacements naturels de sols et de sous-sols. Leur occurrence dépend de nombreux paramètres, comme la nature du sol, la configuration des lieux, en surface et en sous-sol, ou la météo.
+                            <br><br>
+                            <span class="font-weight-bold">Ces mouvements peuvent être classés en deux catégories :</span>
+                            <br><br>
+                            <span class="font-weight-bold">les mouvements lents</span>, qui déforment progressivement le sol et finissent par endommager les constructions ;
+                            <br><span class="font-weight-bold">les mouvements rapides</span>, soudains et brutaux, qui peuvent mettre en danger les personnes et occasionner des dégâts matériels importants.
+                        </p>
+                        <p class="h3 text-dark mt-5">Comment prévenir le risque d'un effondrements de cavité souterraines ?</p>
+                        <p>
+                            L’effondrement d’une cavité n’étant pas prévisible, il ne faut pas se rendre dans une cavité souterraine<br>
+                            sans être habilité et équipé pour le faire.<br><br>
+
+                            Toute personne informée de l’existence d’une cavité souterraine sous un terrain, ou même d’un indice<br>
+                            de cette existence, a l’obligation d’en faire part à sa municipalité (cf.<br>
+                            <a href="">article L. 563-6 du code de l’environnement</a>). La commune adopte ensuite des mesures pour<br>
+                            renforcer le plafond des cavités et/ou protéger les personnes qui vivent sur le terrain sus-jacent.<br>
+                        </p>
+
+                        <p class="h3 text-dark mt-5">Comment prévenir le risque d'un retrait-gonflement des argiles ?<br></p>
+                        <p>
+                            Avant de construire sa maison, la réalisation d’études du sol est obligatoire en zone à risque argileux.<br>
+                            Si la présence d’argile le justifie, des mesures préventives et constructives peuvent être prises pour<br>
+                            construire en toute sécurité.<br><br>
+
+                            Pour en savoir plus : consulter le guide <a href="">Construire en terrain argileux – Réglementation et bonnes pratiques</a>
+                        </p>
+                        <p class="h3 text-dark mt-5">D’autres exemples de mouvements de terrain ?</p>
+                        <p>
+                            <span class="font-weight-bold">Les éboulements et chutes de blocs</span> rocheux sont des mouvements de terrain rapides causés par l’érosion, une forte pluviométrie ou la végétation.<br><br>
+                            <span class="font-weight-bold">Les glissements de terrain</span> (déplacement lent d'une masse de terrain sur une pente) sont principalement dus à la nature du sol.<br><br>
+                            <span class="font-weight-bold">Les coulées de boue</span>, rapides et plus ou moins fluides, sont causées par de fortes précipitations sur un sol très sec.<br><br>
+                        </p>
+                    </div>
+                    
+                </div>
+
+                
+            </div>
+
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; GeoRisk 2023</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+            
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a> -->
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Core plugin JavaScript-->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+
+
+    <!-- Page level plugins -->
+    <script src="../vendor/chart.js/Chart.min.js"></script>
+
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

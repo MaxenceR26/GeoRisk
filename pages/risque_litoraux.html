@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>GeoRisk - Dashboard</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="../css/sb-admin-2.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <script src="https://kit.fontawesome.com/55024bf74a.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<style>
+    *::-webkit-scrollbar {
+        width: 14px;               /* width of the entire scrollbar */
+    }
+
+    *::-webkit-scrollbar-track {
+        background: #4e73df;        /* color of the tracking area */
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background-color: white;    /* color of the scroll thumb */
+        border-radius: 20px;       /* roundness of the scroll thumb */
+        border: 3px solid #4e73df;  /* creates padding around scroll thumb */
+    }
+</style>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fab fa-cloudversify"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">GeoRisk</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Les risques naturels
+            </div>
+
+            <!-- Nav Item - Page nucléaire
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-radiation-alt"></i>
+                    <span>Risque nucléaire</span>
+                </a>
+            </li> -->
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Cliquez-ici</span>
+                </a>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Risques naturels</h6>
+                        <a class="collapse-item" href="risque_inondation.html"><i class="fas fa-tint">&nbsp;&nbsp;</i><span class="text-uppercase">i</span><span class="text-lowercase">nondation</span></a>
+                        <a class="collapse-item" href="risque_sis.html"><i class="fas fa-globe-europe">&nbsp;&nbsp;</i><span class="text-uppercase">s</span><span class="text-lowercase">ismique</span></a>
+                        <a class="collapse-item" href="risque_incendie.html"><i class="fab fa-gripfire">&nbsp;&nbsp;</i><span class="text-uppercase">f</span><span class="text-lowercase">eu de forêt</span></a>
+                        <a class="collapse-item active" href="risque_litoraux.html"><i class="fas fa-swimmer">&nbsp;&nbsp;</i><span class="text-uppercase">l</span><span class="text-lowercase">itoraux</span></a>
+                        <a class="collapse-item" href="risque_mouvement_terrain.html"><i class="fas fa-house-damage">&nbsp;&nbsp;</i><span class="text-uppercase">m</span><span class="text-lowercase">ouvement de terrain</span></a>
+                        <a class="collapse-item" href="risque_cyclone.html"><i class="fa-solid fa-tornado">&nbsp;&nbsp;</i><span class="text-uppercase">c</span><span class="text-lowercase">yclone</span></a>
+                        <a class="collapse-item" href="risque_tempete.html"><i class="fas fa-poo-storm">&nbsp;&nbsp;</i><span class="text-uppercase">t</span><span class="text-lowercase">empête</span></a>
+                        <a class="collapse-item" href="#"><i class="fa-solid fa-hill-avalanche">&nbsp;&nbsp;</i><span class="text-uppercase">a</span><span class="text-lowercase">valanche</span></a>
+                        <a class="collapse-item" href="#"><i class="fa-solid fa-volcano">&nbsp;&nbsp;</i><span class="text-uppercase">e</span><span class="text-lowercase">ruption volcanique</span></a>
+                        <a class="collapse-item" href="risque_radon.html"><i class="fas fa-radiation-alt">&nbsp;&nbsp;</i><span class="text-uppercase">r</span><span class="text-lowercase">adon</span></a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <div class="sidebar-heading">
+                Les risques technologiques
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Cliquez-ici</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Risques technologiques</h6>
+                        <a class="collapse-item" href="#"><i class="fas fa-tint">&nbsp;</i><span class="text-uppercase">a</span><span class="text-lowercase">ccident industriel</span></a>
+                        <a class="collapse-item" href="#"><i class="fas fa-globe-europe">&nbsp;</i><span class="text-uppercase">a</span><span class="text-lowercase">ccident nucléaire</span></a>
+                        <a class="collapse-item" href="#"><i class="fab fa-gripfire">&nbsp;</i><span class="text-uppercase">r</span><span class="text-lowercase">upture de barrage</span></a>
+                        <a class="collapse-item" href="#"><i class="fas fa-swimmer">&nbsp;</i><span class="text-uppercase">t</span><span class="text-lowercase">ransport de <br>marchandises<br> dangereuses</span></a>
+                        <a class="collapse-item" href="#"><i class="fas fa-house-damage">&nbsp;</i><span class="text-uppercase">c</span><span class="text-lowercase">analisations de <br>transport de matières<br> dangereuses</span></a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Informations supplémentaires
+            </div>
+
+            <!-- Nav Item - Stats -->
+            <li class="nav-item">
+                <a class="nav-link" href="charts.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Statistiques</span></a>
+            </li>
+            <!-- Nav Item - Risk général -->
+            <li class="nav-item">
+                <a class="nav-link" href="tables.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Risque général</span></a>
+            </li>
+            <!-- Nav Item - Maps -->
+            <li class="nav-item">
+                <a class="nav-link" href="mondial_map.html">
+                    <i class="fas fa-map-marked"></i>
+                    <span>Carte mondial</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+             <!-- Heading -->
+             <div class="sidebar-heading">
+                Les kits
+            </div>
+
+            <li class="nav-item">
+                <a class="nav-link" href="kit_urgence.html">
+                    <i class="fa-solid fa-kit-medical text-danger"></i>
+                    <span>Kit d'urgence</span></a>
+            </li>
+
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-primary topbar mb-4 static-top shadow" id="navbar-active-drag">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- bouton pour réduire la page -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link" href="#" id="reductButton" role="button">
+                                <i class="fas fa-minus fa-1x"></i>
+                            </a>
+                        </li>
+
+                        <!-- bouton pour agrandir la page -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="maximizeButton" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="far fa-square fa-1x"></i>
+                            </a>
+                        </li>
+
+                        <!-- bouton pour quitter la page -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="closeButton" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-times fa-1x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav><!-- End of Topbar -->
+                <div class="container-fluid">
+                    <div class="title">
+                        <p class="h1 text-dark text-uppercase font-weight-bold">Risque litoraux</p>
+                        <div class="sous-title d-flex">
+                            <p style="margin-top: -10px;" class="font-weight-bold">><p style="margin-top: -10px; margin-left: 5px;">Litoraux</p>
+                        </div>
+                        <div class="container mt-3">
+                            <img src="http://e-sushi.fr/imagearticle/2016/04/cote-francaise.jpg" style="user-select: none; -webkit-user-drag: none;" class="w-100" id="maplitoraux">
+                        </div>
+                    </div>
+                    <div class="container mt-5">
+                        <p class="h3 text-dark font-weight-bold">Des risques multiples sur des territoires à forts enjeux</p>
+                        <p>
+                            Avec près de 20 000 km de côtes, la France est particulièrement concernée par les risques littoraux.<br>
+                            L’élévation du niveau de la mer causée par le dérèglement climatique a tendance à multiplier et<br>
+                            intensifier ces aléas.<br>
+                            <br>
+                            La France est l’un des pays européens les plus menacés par les risques littoraux. Très urbanisée, sa façade maritime attire de plus en plus d’habitants et concentre de nombreuses activités qui, comme la pêche ou le tourisme, sont très vulnérables à ce type de catastrophes.
+
+                        </p>
+
+                        <p class="h3 text-dark font-weight-bold mt-4">Quels sont les risques littoraux en France ?</p>
+                        <p class="mt-2">On en distingue deux principaux : </p>
+                        <p class="mt-2">
+                            <span class="font-weight-bold">la submersion marine</span> : pendant les tempêtes, le niveau de la mer peut augmenter de plusieurs<br>
+                            mètres et les vagues peuvent pénétrer sur les terres, provoquant des inondations côtières. Celles-ci<br>
+                            peuvent durer quelques heures à quelques jours. Certaines sont sans gravité mais d’autres peuvent<br>
+                            être dramatiques. La tempête Xynthia, en 2010, a ainsi rappelé qu’une submersion marine peut être<br>
+                            fatale et très destructrice : elle a causé la mort de 59 personnes et des dégâts matériels évalués à<br>
+                            près de 2 milliards d’euros sur la façade Atlantique ;<br><br>
+                            <span class="font-weight-bold">les tsunamis</span> : contrairement aux vagues de tempêtes, celles des tsunamis peuvent atteindre<br>
+                            plusieurs dizaines de mètres de haut. Causées par un séisme, une éruption volcanique ou un<br>
+                            glissement de terrain sous-marins, ces vagues commencent par un retrait de la mer loin des côtes,<br>
+                            avant de remonter très rapidement, engendrant des courants violents et destructeurs.
+                        </p>
+
+                        <div class="row mt-5">
+                            
+                            <div class="col-6 d-flex justify-content-center">
+                                <div class="container-fluid text-center ">
+                                    <br>
+                                    <p class="font-weight-bold text-uppercase text-dark" style="line-height: 15px;" id="text-chiffre">5 millions<br><br>
+                                        <span class="font-weight-light text-lowercase" style="font-size: 15px;">d’habitants et 850 000 emplois sont exposés au risque de submersion marine</span></p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-6 d-flex justify-content-center">
+                                <div class="container-fluid text-center">
+                                    <br>
+                                    <p class="font-weight-bold text-uppercase text-dark" style="line-height: 15px;" id="text-chiffre">700 ha<br><br>
+                                        <span class="font-weight-light text-lowercase" style="font-size: 15px;">d’habitants et 850 000 emplois sont exposés au risque de submersion marine</span></p>
+                                </div>
+                            </div>
+                        </div>    
+                        <p class="text-warning mt-5">(1) zone topographique située sous le niveau centennal de la mer.</p>           
+                    </div>                 
+                </div>
+                
+            </div>
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; GeoRisk 2023</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a> -->
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Core plugin JavaScript-->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+
+
+    <!-- Page level plugins -->
+    <script src="../vendor/chart.js/Chart.min.js"></script>
+
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
