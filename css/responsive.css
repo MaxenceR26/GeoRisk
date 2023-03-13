@@ -1,0 +1,75 @@
+@media screen and (max-height: 840px) {
+    #frameGoogleMap {
+        height: 500px;
+    }
+}
+
+@media screen and (max-height: 740px) {
+    #frameGoogleMap {
+        height: 400px;
+    }
+}
+
+@media screen and (max-height: 840px) {
+    #mapInondation {
+        width: 598px;
+        height: 576px;
+        
+    }
+}
+
+@media screen and (max-height: 740px) {
+    #mapInondation {
+        width: 498px;
+        height: 476px;
+    }
+}
+
+
+@media screen and (max-height: 840px) {
+    #mapIncendie {
+        width: 598px;
+        height: 576px;
+        
+    }
+}
+
+@media screen and (max-height: 740px) {
+    #mapIncendie {
+        width: 498px;
+        height: 476px;
+    }
+}
+
+@media screen and (max-width: 1136px){
+    #mapIncendie {
+        
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 1136px) and (max-height: 660px){
+    #mapIncendie {
+        
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1088px) {
+    #text-chiffre {
+        font-size: 28px;
+    }    
+}
+
+@media screen and (min-width: 1088px) {
+    #text-chiffre {
+        font-size: 30px;
+    }    
+}
+
+.meteo-widget {
+    width: 500px;
+    height: 120px;
+    border-radius: 30px;
+}
+
